@@ -1,0 +1,197 @@
+body {
+  background: #0e101c;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  margin-top: 30px;
+}
+.img-title img {
+  height: 90px;
+  width: 90px;
+  border-radius: 25px;
+}
+
+.home {
+  margin-right: 20px;
+  margin-left: 30px;
+}
+
+.title-content a {
+  text-decoration: none;
+}
+
+.add-task {
+}
+
+.container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-content {
+  color: darksalmon;
+}
+
+.content {
+  width: 50%;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 25px 50px 0 rgb(0 0 0 / 10%);
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+/* list to do*/
+.control-task {
+  display: flex;
+}
+.todo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.todo-list li {
+  position: relative;
+  font-size: 18px;
+  border-bottom: 1px solid #ededed;
+}
+.todo-list .control-item {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  color: #cc9a9a;
+  margin-bottom: 11px;
+  transition: color 0.2s ease-out;
+  display: none;
+  cursor: pointer;
+}
+
+.todo-list li:hover .control-item {
+  display: block;
+}
+
+.todo-list .control-cancel-task {
+  margin: auto 0;
+  font-size: 30px;
+}
+
+.todo-list .control-edit-task {
+  margin: auto 40px;
+  font-size: 10px;
+}
+
+.todo-list li label {
+  word-break: break-all;
+  padding: 15px 15px 15px 10px;
+  display: block;
+  line-height: 1.2;
+  transition: color 0.4s;
+}
+
+/*footer*/
+.footer {
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  color: #777;
+  display: flex;
+}
+
+.footer span {
+  margin-top: 16px;
+}
+
+.list-control-fiter {
+  list-style: none;
+}
+
+.list-control-fiter li {
+  display: inline;
+  /* padding: 0px 20px; */
+  border: 1px solid;
+  padding: 5px 30px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.list-control-fiter li a {
+  color: inherit;
+  margin: 3px;
+  padding: 3px 7px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.list-control-fiter li a.selected {
+  border-color: rgba(175, 47, 47, 0.2);
+}
+
+.page-new-task {
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.content-task .item-completed {
+  color: #d9d9d9 !important;
+  text-decoration: line-through;
+}
+.text-task {
+  font-size: 20px;
+  padding: 20px 0px;
+  margin: 5px 0px;
+  border: none;
+}
+
+.hidden-label,
+.hidden-edit {
+  display: none;
+}
+
+.show-label {
+  display: block;
+}
+
+.show-edit {
+  display: block;
+  margin-top: 10px;
+}
+
+.show-edit input {
+  padding: 10px;
+}
+
+.switch-language ul {
+  list-style: none;
+  display: flex;
+  color: blanchedalmond;
+}
+
+.item-lang li {
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+}
+
+.active-lang-en,
+.active-lang-vi {
+  background-color: cadetblue;
+}
+
+.disable-lang-en,
+.disable-lang-vi {
+  background-color: none;
+}
